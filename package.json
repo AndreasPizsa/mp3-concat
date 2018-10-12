@@ -1,6 +1,6 @@
 {
   "name": "@podcastreader/mp3-concat",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Concatenate multiple mp3 files to a single output file",
   "main": "concat.js",
   "scripts": {
