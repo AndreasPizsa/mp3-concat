@@ -4,7 +4,6 @@
   "description": "Concatenate multiple mp3 files to a single output file",
   "main": "concat.js",
   "scripts": {
-    "commitmsg": "commitlint -E HUSKY_GIT_PARAMS",
     "release": "standard-version",
     "test": "xo && nyc ava"
   },
@@ -31,5 +30,10 @@
     "@ffmpeg-installer/ffmpeg": "^1.0.15",
     "@ffprobe-installer/ffprobe": "^1.0.9",
     "fluent-ffmpeg": "^2.1.2"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
