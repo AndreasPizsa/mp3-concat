@@ -1,0 +1,35 @@
+{
+  "name": "@podcastreader/mp3-concat",
+  "version": "0.0.1",
+  "description": "Concatenate multiple mp3 files to a single output file",
+  "main": "concat.js",
+  "scripts": {
+    "commitmsg": "commitlint -E HUSKY_GIT_PARAMS",
+    "release": "standard-version",
+    "test": "xo && nyc ava"
+  },
+  "keywords": [],
+  "author": "Andreas Pizsa <hopster@gmail.com> (https://github.com/AndreasPizsa)",
+  "repository": "AndreasPizsa/mp3-concat",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^7.2.0",
+    "@commitlint/config-conventional": "^7.1.2",
+    "ava": "^0.25.0",
+    "husky": "^1.1.2",
+    "nyc": "^13.0.1",
+    "sinon": "^6.3.5",
+    "standard-version": "^4.4.0",
+    "tempy": "^0.2.1",
+    "xo": "^0.23.0"
+  },
+  "xo": {
+    "semicolon": false,
+    "space": true
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.15",
+    "@ffprobe-installer/ffprobe": "^1.0.9",
+    "fluent-ffmpeg": "^2.1.2"
+  }
+}
